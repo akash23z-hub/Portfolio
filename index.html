@@ -3,100 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Akash Ratan, a B.Tech Computer Science student at GITAM University.">
+  <meta name="description" content="Portfolio of Akash Ratan, a Computer Science student at GITAM University.">
   <title>Akash Ratan | Portfolio</title>
+  <!-- Bootstrap CSS provides the responsive layout and ready-made components. -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navigation" aria-label="Main navigation">
-      <a class="logo" href="#home">Akash Ratan</a>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <header class="site-header sticky-top">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="navbar-brand fw-bold" href="#home">Akash Ratan</a>
+      <ul class="navbar-nav flex-row flex-wrap gap-2 gap-md-3">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero section" id="home">
-      <div class="hero-content">
+    <section class="hero" id="home">
+      <div class="container py-5">
         <p class="eyebrow">B.Tech Computer Science Student</p>
-        <h1>Hello, I'm <span>Akash Ratan</span></h1>
-        <p class="hero-text">I enjoy learning how technology works and building useful things with code. My interests include software development, networking, and artificial intelligence.</p>
-        <a class="button" href="#projects">See my projects</a>
+        <h1 class="display-4 fw-bold">Hello, I'm <span>Akash Ratan</span></h1>
+        <p class="lead hero-text">I enjoy learning how technology works and building useful things with code. My interests include software development, networking, and artificial intelligence.</p>
+        <a class="btn btn-primary mt-2" href="#projects">See my projects</a>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <div class="section-heading">
-        <p class="eyebrow">A little about me</p>
-        <h2>About Me</h2>
-      </div>
-      <p class="about-text">I am a Computer Science student at GITAM University. I am building a strong foundation in programming and problem solving, and I like exploring how software and networks can solve real-world problems. I am currently learning and improving through coursework and personal projects.</p>
+    <section class="container py-5" id="about">
+      <p class="eyebrow">A little about me</p>
+      <h2 class="section-title">About Me</h2>
+      <p class="about-text">I am a Computer Science student at GITAM University. I am building a strong foundation in programming and problem solving, and I like exploring how software and networks can solve real-world problems. I am learning through coursework and personal projects.</p>
     </section>
 
-    <section class="section soft-background" id="skills">
-      <div class="section-heading">
+    <section class="soft-background" id="skills">
+      <div class="container py-5">
         <p class="eyebrow">What I am learning</p>
-        <h2>Skills &amp; Interests</h2>
+        <h2 class="section-title">Skills &amp; Interests</h2>
+        <ul class="list-unstyled d-flex flex-wrap gap-2 mb-0">
+          <li><span class="badge skill-badge">Java</span></li>
+          <li><span class="badge skill-badge">Data Structures &amp; Algorithms</span></li>
+          <li><span class="badge skill-badge">Python</span></li>
+          <li><span class="badge skill-badge">HTML &amp; CSS</span></li>
+          <li><span class="badge skill-badge">Web Development</span></li>
+          <li><span class="badge skill-badge">Computer Networking</span></li>
+          <li><span class="badge skill-badge">Artificial Intelligence &amp; Machine Learning</span></li>
+        </ul>
       </div>
-      <ul class="skill-list">
-        <li>Java</li>
-        <li>Data Structures &amp; Algorithms</li>
-        <li>Python</li>
-        <li>HTML &amp; CSS</li>
-        <li>Web Development</li>
-        <li>Computer Networking</li>
-        <li>Artificial Intelligence &amp; Machine Learning</li>
-      </ul>
     </section>
 
-    <section class="section" id="projects">
-      <div class="section-heading">
-        <p class="eyebrow">Things I have worked on</p>
-        <h2>Projects</h2>
+    <section class="container py-5" id="projects">
+      <p class="eyebrow">Things I have worked on</p>
+      <h2 class="section-title">Projects</h2>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <article class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title h5">AI/ML DNS Filtering</h3>
+              <p class="card-text">A project exploring how machine learning can help identify and filter potentially harmful domains through DNS. It combines ideas from networking and classification.</p>
+              <p class="small text-secondary mb-0">Add a project link here when you have one.</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title h5">More projects coming soon</h3>
+              <p class="card-text">I am continuing to practice programming and will add more projects as I build them.</p>
+            </div>
+          </article>
+        </div>
       </div>
-      <article class="project-card">
-        <h3>AI/ML DNS Filtering</h3>
-        <p>A project exploring how machine learning can help identify and filter potentially harmful domains through DNS. I am developing my understanding of the networking and classification ideas behind it.</p>
-        <p class="project-note">Add a project link here when you have one.</p>
-      </article>
-      <article class="project-card">
-        <h3>More projects coming soon</h3>
-        <p>I am continuing to practice programming and will add more projects as I build them.</p>
-      </article>
     </section>
 
-    <section class="section soft-background" id="education">
-      <div class="section-heading">
+    <section class="soft-background" id="education">
+      <div class="container py-5">
         <p class="eyebrow">My studies</p>
-        <h2>Education</h2>
+        <h2 class="section-title">Education</h2>
+        <article class="card">
+          <div class="card-body">
+            <h3 class="card-title h5">B.Tech in Computer Science and Engineering</h3>
+            <p class="card-text mb-1">GITAM University</p>
+            <p class="small text-secondary mb-0">Currently pursuing</p>
+          </div>
+        </article>
       </div>
-      <article class="education-card">
-        <h3>B.Tech in Computer Science and Engineering</h3>
-        <p>GITAM University</p>
-        <p class="project-note">Currently pursuing</p>
-      </article>
     </section>
 
-    <section class="section contact-section" id="contact">
-      <div class="section-heading">
-        <p class="eyebrow">Get in touch</p>
-        <h2>Contact</h2>
-      </div>
-      <p>Have a question or want to talk about a project? I would be happy to hear from you.</p>
-      <a class="button" href="mailto:n.akashratan@gmail.com">Email me</a>
+    <section class="container py-5" id="contact">
+      <p class="eyebrow">Get in touch</p>
+      <h2 class="section-title">Contact</h2>
+      <p class="about-text">Have a question or want to talk about a project? I would be happy to hear from you.</p>
+      <a class="btn btn-primary" href="mailto:your.email@example.com">Email me</a>
+      <p class="small text-secondary mt-2">Replace your.email@example.com with your email address.</p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2026 Akash Ratan. Built with HTML and CSS.</p>
-    <a href="#home">Back to top</a>
+    <div class="container py-3 d-flex flex-wrap justify-content-between gap-2">
+      <p class="mb-0">&copy; 2026 Akash Ratan. Built with HTML, CSS, and Bootstrap.</p>
+      <a href="#home">Back to top</a>
+    </div>
   </footer>
 </body>
 </html>
